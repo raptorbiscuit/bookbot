@@ -38,11 +38,12 @@ def countCharacters(book):
 
 def printCharacterCount(charCount):
     alphaList = []
-    # filter out non-alpha characters
 
+    # filter out non-alpha characters
     for i in charCount:
         if i.isalpha():
             alphaList.append([i,charCount[i]])
+            
     # sort and print results
     alphaList.sort()
     for each in alphaList:
